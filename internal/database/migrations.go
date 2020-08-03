@@ -9,3 +9,16 @@
 // Миграции в БД для дальнейшей работы
 
 package database
+
+import (
+	"github.com/google/uuid"
+	"github.com/jinzhu/gorm"
+)
+
+type User struct {
+	gorm.Model
+	UUID     uuid.UUID
+	Email    string `json:"email"`
+	Login    string `json:"login"`
+	Password string `json:"password"`
+}
