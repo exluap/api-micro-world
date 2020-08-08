@@ -10,26 +10,28 @@ package main
 
 import (
 	"github.com/exluap/api-microworld/internal/user"
-	"github.com/gorilla/mux"
+	"github.com/go-chi/chi"
+	"github.com/go-chi/chi/middleware"
 	"github.com/rs/cors"
 	"log"
 	"net/http"
 )
 
 func main() {
-	r := mux.NewRouter()
+	r := chi.NewRouter()
+	r.Use(middleware.Logger)
 
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"*"},                  // All origins
-		AllowedMethods:   []string{"GET", "POST", "PUT"}, // Allowing only get, just an example
+		AllowedOrigins:   []string{"*"},                            // All origins
+		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE"}, // Allowing only get, just an example
 		AllowCredentials: true,
 		AllowedHeaders:   []string{"*"},
 	})
 
-	api := r.PathPrefix("/api").Subrouter()
-
-	api.HandleFunc("/user/register", user.RegisterUser).Methods("POST")
-	api.HandleFunc("/user/login", user.AuthUser).Methods("POST")
+	r.Route("/api/user", func(r chi.Router) {
+		r.Post("/register", user.RegisterUser)
+		r.Post("/login", user.AuthUser)
+	})
 
 	log.Fatal(http.ListenAndServe(":8080", c.Handler(r)))
 }
