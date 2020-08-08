@@ -31,9 +31,11 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c049a993-03dd-416e-aa3b-1faf8b04c1ea" name="MW-1 Разработать систему авторизации пользователей" comment="MW-1 Реализована логика авторизации пользователей">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="c049a993-03dd-416e-aa3b-1faf8b04c1ea" name="MW-1 Разработать систему авторизации пользователей" comment="MW-1 Update dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/user/authModule.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/user/authModule.go" afterDir="false" />
     </list>
     <list id="208262a2-1436-4c25-b096-01e97d504d7e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +149,7 @@
       <option name="number" value="1" />
       <option name="presentableId" value="MW-1" />
       <option name="project" value="MW" />
-      <updated>1596441560356</updated>
+      <updated>1596457347183</updated>
     </task>
     <option name="createBranch" value="false" />
     <servers>
@@ -179,7 +181,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MW-1 Добавлен шаблон миграций" />
     <MESSAGE value="MW-1 Реализована логика авторизации пользователей" />
-    <option name="LAST_COMMIT_MESSAGE" value="MW-1 Реализована логика авторизации пользователей" />
+    <MESSAGE value="MW-1 Update dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="MW-1 Update dockerfile" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -197,10 +200,10 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="184" y="93" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.819@0.23.1440.819" timestamp="1596441051460" />
-    <state x="219" y="23" key="CommitChangelistDialog2" timestamp="1596439691974">
+    <state x="219" y="23" key="CommitChangelistDialog2" timestamp="1596457346687">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="219" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1596439691974" />
+    <state x="219" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1596457346687" />
     <state x="574" y="187" key="EnvironmentVariablesDialog" timestamp="1596441050658">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
@@ -229,10 +232,10 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="466" y="252" key="SimpleOpenTaskDialog/0.23.1440.819@0.23.1440.819" timestamp="1596317899511" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1596439693791">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1596457361088">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.819@0.23.1440.819" timestamp="1596439693791" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.819@0.23.1440.819" timestamp="1596457361088" />
     <state x="626" y="326" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596382953082">
       <screen x="0" y="23" width="1440" height="819" />
     </state>

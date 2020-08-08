@@ -28,8 +28,8 @@ func main() {
 
 	api := r.PathPrefix("/api").Subrouter()
 
-	api.HandleFunc("/user/register", user.RegisterUser).Methods("GET")
-	api.HandleFunc("/user/login", user.AuthUser).Methods("GET")
+	api.HandleFunc("/user/register", user.RegisterUser).Methods("POST")
+	api.HandleFunc("/user/login", user.AuthUser).Methods("POST")
 
 	log.Fatal(http.ListenAndServe(":8080", c.Handler(r)))
 }
