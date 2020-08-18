@@ -1,0 +1,66 @@
+basePath: /api
+definitions:
+  Default:
+    properties:
+      message:
+        type: object
+      result:
+        type: boolean
+    type: object
+info:
+  contact: {}
+  description: Swagger API for microworld project
+  license: {}
+  title: MicroWorld Swagger API
+  version: "1.0"
+paths:
+  /user/{userUUID}:
+    delete:
+      parameters:
+      - description: user uuid from token
+        in: path
+        name: userUUID
+        required: true
+        type: string
+      produces:
+      - application/json
+      summary: Deleting user profile
+  /user/{userUUID}/info:
+    get:
+      description: Getting user's profile info
+      parameters:
+      - description: user uuid from token
+        in: path
+        name: userUUID
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: user info
+          schema:
+            $ref: '#/definitions/Default'
+      summary: Getting user's profile
+  /user/login:
+    post:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: result and token
+          schema:
+            $ref: '#/definitions/Default'
+      summary: Authentication user
+  /user/register:
+    post:
+      description: Register user with data. ATTENTION! Password must be >=6 symbols
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: result and token
+          schema:
+            $ref: '#/definitions/Default'
+      summary: Register user with specified model
+swagger: "2.0"

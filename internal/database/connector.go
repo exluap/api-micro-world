@@ -10,10 +10,10 @@ package database
 
 import (
 	"github.com/jinzhu/gorm"
-	"log"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
+	"github.com/sirupsen/logrus"
 	"os"
 )
-import _ "github.com/jinzhu/gorm/dialects/postgres"
 
 var Db *gorm.DB
 
@@ -23,7 +23,9 @@ func init() {
 		" sslmode=disable")
 
 	if err != nil {
-		log.Fatal("can not open database connect: ", err)
+		logrus.Fatal("can not open database connect: ", err)
+	} else {
+		logrus.Info("database connect successful")
 	}
 
 	db.AutoMigrate(&User{})

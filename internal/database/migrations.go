@@ -17,8 +17,8 @@ import (
 
 type User struct {
 	gorm.Model
-	UUID     uuid.UUID
-	Email    string `json:"email"`
-	Login    string `json:"login"`
-	Password string `json:"password"`
-}
+	UUID     uuid.UUID `swaggerignore:"true"`
+	Email    string    `json:"email" example:"test@test.com"`
+	Login    string    `json:"login" example:"test"`
+	Password string    `json:"password" example:"123456"`
+} //@name User
