@@ -17,3 +17,8 @@ type Token struct {
 	UUID uuid.UUID
 	jwt.StandardClaims
 }
+
+type User struct {
+	Login string `json:"login"`
+	Email string `json:"email"`
+} //@name User

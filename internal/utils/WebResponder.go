@@ -13,11 +13,12 @@ import (
 	"net/http"
 )
 
-func Message(status bool, message string) map[string]interface{} {
-	return map[string]interface{}{"status": status, "message": message}
-}
+type Message struct {
+	Result  bool
+	Message interface{}
+} //@name Default Response
 
-func Respond(w http.ResponseWriter, data map[string]interface{}) {
+func (m *Message) Respond(w http.ResponseWriter) {
 	w.Header().Add("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(data)
+	json.NewEncoder(w).Encode(m)
 }

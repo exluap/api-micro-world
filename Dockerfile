@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
 WORKDIR /app
-COPY  build/cmd ./
+COPY  build/api-micro-world ./
 
-ENTRYPOINT ["./cmd"]
+ENTRYPOINT ["./api-micro-world"]

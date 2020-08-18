@@ -1,0 +1,102 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Swagger API for microworld project",
+        "title": "MicroWorld Swagger API",
+        "contact": {},
+        "license": {},
+        "version": "1.0"
+    },
+    "basePath": "/api",
+    "paths": {
+        "/user/login": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Authentication user",
+                "responses": {
+                    "200": {
+                        "description": "result and token",
+                        "schema": {
+                            "$ref": "#/definitions/Default"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/register": {
+            "post": {
+                "description": "Register user with data. ATTENTION! Password must be \u003e=6 symbols",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Register user with specified model",
+                "responses": {
+                    "200": {
+                        "description": "result and token",
+                        "schema": {
+                            "$ref": "#/definitions/Default"
+                        }
+                    }
+                }
+            }
+        },
+        "/user/{userUUID}": {
+            "delete": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Deleting user profile",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "user uuid from token",
+                        "name": "userUUID",
+                        "in": "path",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        "/user/{userUUID}/info": {
+            "get": {
+                "description": "Getting user's profile info",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Getting user's profile",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "user uuid from token",
+                        "name": "userUUID",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "user info",
+                        "schema": {
+                            "$ref": "#/definitions/Default"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Default": {
+            "type": "object",
+            "properties": {
+                "message": {
+                    "type": "object"
+                },
+                "result": {
+                    "type": "boolean"
+                }
+            }
+        }
+    }
+}
