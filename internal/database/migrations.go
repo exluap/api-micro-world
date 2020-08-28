@@ -13,6 +13,7 @@ package database
 import (
 	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"
+	"time"
 )
 
 type User struct {
@@ -21,4 +22,5 @@ type User struct {
 	Email    string    `json:"email" example:"test@test.com"`
 	Login    string    `json:"login" example:"test"`
 	Password string    `json:"password" example:"123456"`
+	LastAuth time.Time `json:"last_auth" gorm:"timestamp with time zone"`
 } //@name User

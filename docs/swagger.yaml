@@ -7,6 +7,24 @@ definitions:
       result:
         type: boolean
     type: object
+  User:
+    properties:
+      email:
+        type: string
+      last_auth:
+        type: string
+      login:
+        type: string
+    type: object
+  UserList:
+    properties:
+      result:
+        type: boolean
+      users:
+        items:
+          $ref: '#/definitions/User'
+        type: array
+    type: object
 info:
   contact: {}
   description: Swagger API for microworld project
@@ -14,6 +32,17 @@ info:
   title: MicroWorld Swagger API
   version: "1.0"
 paths:
+  /admin/users:
+    get:
+      description: Getting all users in system
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: result
+          schema:
+            $ref: '#/definitions/UserList'
+      summary: Getting all users in system
   /user/{userUUID}:
     delete:
       parameters:

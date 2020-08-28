@@ -10,6 +10,7 @@ package main
 
 import (
 	_ "github.com/exluap/api-microworld/docs"
+	"github.com/exluap/api-microworld/internal/admin/users"
 	"github.com/exluap/api-microworld/internal/user"
 	"github.com/exluap/api-microworld/internal/utils"
 	"github.com/go-chi/chi"
@@ -55,6 +56,10 @@ func main() {
 			})
 		})
 
+		r.Route("/admin", func(r chi.Router) {
+			r.Use(utils.JwtAuthentication)
+			r.Get("/users", users.GetListOfUser)
+		})
 	})
 
 	r.Get("/swagger/*", httpSwagger.Handler())

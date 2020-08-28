@@ -25,6 +25,23 @@ var doc = `{
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
     "paths": {
+        "/admin/users": {
+            "get": {
+                "description": "Getting all users in system",
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Getting all users in system",
+                "responses": {
+                    "200": {
+                        "description": "result",
+                        "schema": {
+                            "$ref": "#/definitions/UserList"
+                        }
+                    }
+                }
+            }
+        },
         "/user/login": {
             "post": {
                 "produces": [
@@ -119,6 +136,34 @@ var doc = `{
                 },
                 "result": {
                     "type": "boolean"
+                }
+            }
+        },
+        "User": {
+            "type": "object",
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "last_auth": {
+                    "type": "string"
+                },
+                "login": {
+                    "type": "string"
+                }
+            }
+        },
+        "UserList": {
+            "type": "object",
+            "properties": {
+                "result": {
+                    "type": "boolean"
+                },
+                "users": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/User"
+                    }
                 }
             }
         }

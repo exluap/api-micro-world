@@ -11,6 +11,7 @@ package user
 import (
 	"github.com/dgrijalva/jwt-go"
 	"github.com/google/uuid"
+	"time"
 )
 
 type Token struct {
@@ -19,6 +20,7 @@ type Token struct {
 }
 
 type User struct {
-	Login string `json:"login"`
-	Email string `json:"email"`
+	Login    string    `json:"login"`
+	Email    string    `json:"email"`
+	LastAuth time.Time `json:"last_auth" `
 } //@name User

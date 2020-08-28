@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="BuildServerSettings">
     <option name="LOGIN" value="exluap" />
     <option name="SERVER_URL" value="https://teamcity.exluap.com" />
@@ -31,16 +49,20 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" name="MW-6 Необходимо доработать взаимодействие с пользователем" comment="">
+    <list default="true" id="208262a2-1436-4c25-b096-01e97d504d7e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/internal/admin/users/gettingUsers.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/docs.go" beforeDir="false" afterPath="$PROJECT_DIR$/docs/docs.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/swagger.json" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/swagger.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/swagger.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/database/migrations.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/database/migrations.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/user/authModule.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/user/authModule.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/user/workWithUser.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/user/workWithUser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/user/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/user/models.go" afterDir="false" />
     </list>
-    <list id="208262a2-1436-4c25-b096-01e97d504d7e" name="Default Changelist" comment="" />
+    <list id="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" name="MW-6 Необходимо доработать взаимодействие с пользователем" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,10 +85,44 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="MW-6" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="20" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="24" end1="24" start2="42" end2="48" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="29" end1="29" start2="53" end2="57" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="33" end1="34" start2="61" end2="63" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="36" end1="39" start2="65" end2="66" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="40" end1="41" start2="67" end2="71" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="42" end1="43" start2="72" end2="72" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="65" end1="66" start2="94" end2="95" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="70" end1="70" start2="99" end2="129" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="113" end1="114" start2="172" end2="173" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="139" end1="140" start2="198" end2="199" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="144" end1="145" start2="203" end2="204" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="157" end1="168" start2="216" end2="216" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="196" end1="196" start2="244" end2="255" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="216" end1="217" start2="275" end2="276" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="219" end1="220" start2="278" end2="279" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="228" end1="229" start2="287" end2="288" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="231" end1="233" start2="290" end2="292" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="235" end1="237" start2="294" end2="296" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="239" end1="241" start2="298" end2="300" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="243" end1="245" start2="302" end2="304" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="247" end1="249" start2="306" end2="308" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
+        <range start1="251" end1="253" start2="310" end2="312" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="255" end1="257" start2="314" end2="316" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="259" end1="261" start2="318" end2="320" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="263" end1="264" start2="322" end2="323" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="280" end1="280" start2="339" end2="343" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+        <range start1="288" end1="295" start2="351" end2="351" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1fVwvKg6iquaOU9gjW8hDM7qnw7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -111,7 +167,7 @@
       <working_directory value="$PROJECT_DIR$" />
       <envs>
         <env name="DB_PORT" value="5432" />
-        <env name="DB_HOST" value="10.42.175.137" />
+        <env name="DB_HOST" value="10.42.178.80" />
         <env name="DB_NAME" value="api" />
         <env name="DB_PASSWORD" value="FVuR6ChG7BAqhKJY" />
         <env name="DB_USER" value="postgres" />
@@ -137,12 +193,12 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <changelist id="208262a2-1436-4c25-b096-01e97d504d7e" name="Default Changelist" comment="" />
       <created>1596316800886</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1596318182988</updated>
+      <updated>1598614057418</updated>
     </task>
     <task id="MW-1" summary="Разработать систему авторизации пользователей">
       <branch name="MW-6" repository="$PROJECT_DIR$" original="true" />
@@ -152,17 +208,6 @@
       <url>https://youtrack.exluap.com/issue/MW-1</url>
       <option name="number" value="1" />
       <option name="presentableId" value="MW-1" />
-      <option name="project" value="MW" />
-      <updated>1598605739967</updated>
-    </task>
-    <task active="true" id="MW-6" summary="Необходимо доработать взаимодействие с пользователем">
-      <branch name="MW-6" repository="$PROJECT_DIR$" />
-      <changelist id="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" name="MW-6 Необходимо доработать взаимодействие с пользователем" comment="" />
-      <created>1597245347378</created>
-      <option name="issue" value="true" />
-      <url>https://youtrack.exluap.com/issue/MW-6</url>
-      <option name="number" value="6" />
-      <option name="presentableId" value="MW-6" />
       <option name="project" value="MW" />
       <updated>1598605739967</updated>
     </task>
@@ -194,6 +239,17 @@
     </option>
     <option name="upsourceUrl" value="https://upsource.exluap.com/" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MW-1 Добавлен шаблон миграций" />
     <MESSAGE value="MW-1 Реализована логика авторизации пользователей" />
@@ -214,10 +270,10 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="424" y="162" key="#Servers/0.23.1440.819@0.23.1440.819" timestamp="1596317780147" />
-    <state x="184" y="93" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597436411670">
+    <state x="178" y="43" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598619577523">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="184" y="93" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.819@0.23.1440.819" timestamp="1597436411670" />
+    <state x="178" y="43" width="1071" height="748" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.819@0.23.1440.819" timestamp="1598619577523" />
     <state x="485" y="304" key="#com.intellij.tools.ToolEditorDialog" timestamp="1597436408384">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
@@ -226,27 +282,27 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="219" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1596924928638" />
-    <state x="574" y="187" key="EnvironmentVariablesDialog" timestamp="1597422244571">
+    <state x="574" y="187" key="EnvironmentVariablesDialog" timestamp="1598619576090">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="574" y="187" key="EnvironmentVariablesDialog/0.23.1440.819@0.23.1440.819" timestamp="1597422244571" />
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1598606704155">
+    <state x="574" y="187" key="EnvironmentVariablesDialog/0.23.1440.819@0.23.1440.819" timestamp="1598619576090" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1598619878246">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1598606704155" />
-    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1598606704154">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1598619878246" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1598619878245">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1598606704154" />
-    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1598606704154">
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1598619878245" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1598619878244">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1598606704154" />
-    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1598606704154">
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1598619878244" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1598619878246">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1598606704154" />
-    <state width="1398" height="262" key="GridCell.Tab.1.bottom" timestamp="1598606216802">
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1598619878246" />
+    <state width="1398" height="262" key="GridCell.Tab.1.bottom" timestamp="1598614103282">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state width="1398" height="262" key="GridCell.Tab.1.bottom/0.23.1440.819@0.23.1440.819" timestamp="1598606216802" />

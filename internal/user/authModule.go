@@ -18,6 +18,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
+	"time"
 )
 
 func validate(account database.User) (utils.Message, bool) {
@@ -173,6 +174,21 @@ func AuthUser(w http.ResponseWriter, r *http.Request) {
 		message := utils.Message{
 			Result:  false,
 			Message: "can not find user or password is incorrect",
+		}
+		message.Respond(w)
+		return
+	}
+
+	user.LastAuth = time.Now()
+
+	err = database.GetDb().Table("users").Where("uuid = ?", user.UUID).Save(user).Error
+
+	if err != nil {
+		log.Errorf("can not save user %v last login with error: %v", user.UUID, err)
+		w.WriteHeader(http.StatusInternalServerError)
+		message := utils.Message{
+			Result:  false,
+			Message: "can not save user auth",
 		}
 		message.Respond(w)
 		return
