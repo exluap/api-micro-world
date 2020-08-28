@@ -9,10 +9,12 @@
 package user
 
 import (
+	"encoding/json"
 	"github.com/exluap/api-microworld/internal/database"
 	"github.com/exluap/api-microworld/internal/utils"
 	"github.com/go-chi/chi"
 	"github.com/sirupsen/logrus"
+	"io/ioutil"
 	"net/http"
 )
 
@@ -94,6 +96,111 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	message := utils.Message{
 		Result:  true,
 		Message: "user's " + userUUID + " profile deleted",
+	}
+	message.Respond(w)
+}
+
+//UpdateUserInfo godoc
+// @summary Updating user info
+// @produce json
+// @router /user/me [post]
+// @sucess 200 {object} utils.Message "result of operation"
+func UpdateUserInfo(w http.ResponseWriter, r *http.Request) {
+	w.Header().Add("Content-Type", "application/json")
+	db := database.GetDb()
+	ctx := r.Context()
+
+	logrus.Infof("Ctx: %v", ctx)
+
+	logrus.Infof("user %v start to update self profile", ctx.Value("userID"))
+
+	body, err := ioutil.ReadAll(r.Body)
+
+	if err != nil {
+		logrus.Errorf("error with body: %v", err)
+		w.WriteHeader(http.StatusInternalServerError)
+		message := utils.Message{
+			Result:  false,
+			Message: "error with body",
+		}
+		message.Respond(w)
+		return
+	}
+
+	userUpdate := struct {
+		User
+		OldPassword string `json:"old_password"`
+		NewPassword string `json:"new_password"`
+	}{}
+
+	err = json.Unmarshal(body, &userUpdate)
+
+	if err != nil {
+		logrus.Errorf("error unmarshall body: %v", err)
+		w.WriteHeader(http.StatusInternalServerError)
+		message := utils.Message{
+			Result:  false,
+			Message: "error with unmarshal body",
+		}
+		message.Respond(w)
+		return
+	}
+
+	var tempUser database.User
+
+	err = db.Where("uuid = ?", ctx.Value("userID")).First(&tempUser).Error
+
+	if err != nil {
+		logrus.Errorf("error with getting user by uuid %v: %v", ctx.Value("userID"), err)
+		w.WriteHeader(http.StatusInternalServerError)
+		message := utils.Message{
+			Result:  false,
+			Message: "error with update user profile",
+		}
+		message.Respond(w)
+		return
+	}
+
+	if userUpdate.NewPassword != "" {
+		if userUpdate.OldPassword != tempUser.Password {
+			logrus.Warnf("user %v try to update password! But it is not correct", ctx.Value("userID"))
+			w.WriteHeader(http.StatusBadRequest)
+			message := utils.Message{
+				Result:  false,
+				Message: "can not update user profile. Incorrect password",
+			}
+			message.Respond(w)
+			return
+		}
+
+		tempUser.Password = userUpdate.NewPassword
+	}
+
+	if userUpdate.Email != "" {
+		tempUser.Email = userUpdate.Email
+	}
+
+	if userUpdate.Login != "" {
+		tempUser.Login = userUpdate.Login
+	}
+
+	err = db.Where("uuid = ?", ctx.Value("userID")).Model(&database.User{}).Updates(tempUser).Error
+
+	if err != nil {
+		logrus.Errorf("error with saving updates user by uuid %v: %v", ctx.Value("userID"), err)
+		w.WriteHeader(http.StatusInternalServerError)
+		message := utils.Message{
+			Result:  false,
+			Message: "error with update user profile",
+		}
+		message.Respond(w)
+		return
+	}
+
+	w.WriteHeader(http.StatusOK)
+	message := utils.Message{
+		Result:  true,
+		Message: "all saved",
 	}
 	message.Respond(w)
 }

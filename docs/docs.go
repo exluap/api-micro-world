@@ -41,6 +41,14 @@ var doc = `{
                 }
             }
         },
+        "/user/me": {
+            "post": {
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "Updating user info"
+            }
+        },
         "/user/register": {
             "post": {
                 "description": "Register user with data. ATTENTION! Password must be \u003e=6 symbols",

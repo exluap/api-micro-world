@@ -48,6 +48,11 @@ func main() {
 				r.Get("/info", user.GetUserInfo)
 				r.Delete("/", user.DeleteUser)
 			})
+
+			r.Route("/me", func(r chi.Router) {
+				r.Use(utils.JwtAuthentication)
+				r.Post("/", user.UpdateUserInfo)
+			})
 		})
 
 	})
