@@ -52,6 +52,11 @@ paths:
           schema:
             $ref: '#/definitions/Default'
       summary: Authentication user
+  /user/me:
+    post:
+      produces:
+      - application/json
+      summary: Updating user info
   /user/register:
     post:
       description: Register user with data. ATTENTION! Password must be >=6 symbols
