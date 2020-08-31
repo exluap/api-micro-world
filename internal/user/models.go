@@ -20,6 +20,7 @@ type Token struct {
 }
 
 type User struct {
+	UUID     uuid.UUID `json:"uuid"`
 	Login    string    `json:"login"`
 	Email    string    `json:"email"`
 	LastAuth time.Time `json:"last_auth" `
