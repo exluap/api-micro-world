@@ -49,9 +49,7 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="208262a2-1436-4c25-b096-01e97d504d7e" name="Default Changelist" comment="MICRO-WORLD-T-1 Added getting users in database. Added last auth field for user. Updated swagger info">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="208262a2-1436-4c25-b096-01e97d504d7e" name="Default Changelist" comment="" />
     <list id="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" name="MW-6 Необходимо доработать взаимодействие с пользователем" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -81,29 +79,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="42" end1="42" start2="42" end2="48" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="47" end1="47" start2="53" end2="57" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="52" end1="53" start2="62" end2="62" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="54" end1="61" start2="63" end2="63" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="95" end1="123" start2="97" end2="114" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="213" end1="213" start2="204" end2="212" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="258" end1="259" start2="257" end2="259" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="280" end1="281" start2="280" end2="281" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="283" end1="284" start2="283" end2="284" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="307" end1="309" start2="307" end2="309" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="311" end1="313" start2="311" end2="313" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="315" end1="317" start2="315" end2="317" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="319" end1="320" start2="319" end2="320" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="328" end1="329" start2="328" end2="329" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="331" end1="332" start2="331" end2="332" changelist="208262a2-1436-4c25-b096-01e97d504d7e" />
-        <range start1="336" end1="336" start2="336" end2="340" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-        <range start1="344" end1="351" start2="348" end2="348" changelist="31aa5d57-fd47-453d-ace1-789f9e3fc9f7" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1fVwvKg6iquaOU9gjW8hDM7qnw7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -199,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598619984568</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="MICRO-WORLD-T-1 Added getting users in database. Added last auth field for user. Updated swagger info">
+      <created>1598875273098</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1598875273100</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <option name="createBranch" value="false" />
     <option name="useBranch" value="true" />
     <servers>
@@ -268,30 +250,30 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="485" y="304" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.819@0.23.1440.819" timestamp="1597436408383" />
-    <state x="180" y="23" key="CommitChangelistDialog2" timestamp="1598874733077">
+    <state x="180" y="23" key="CommitChangelistDialog2" timestamp="1598875272590">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="180" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1598874733077" />
+    <state x="180" y="23" key="CommitChangelistDialog2/0.23.1440.819@0.23.1440.819" timestamp="1598875272590" />
     <state x="574" y="187" key="EnvironmentVariablesDialog" timestamp="1598619576090">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="574" y="187" key="EnvironmentVariablesDialog/0.23.1440.819@0.23.1440.819" timestamp="1598619576090" />
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1598874791315">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1598875246621">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1598874791315" />
-    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1598874791315">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.819@0.23.1440.819" timestamp="1598875246621" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1598875246620">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1598874791315" />
-    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1598874791311">
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.819@0.23.1440.819" timestamp="1598875246620" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1598875246620">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1598874791311" />
-    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1598874791315">
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.819@0.23.1440.819" timestamp="1598875246620" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1598875246620">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1598874791315" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.819@0.23.1440.819" timestamp="1598875246620" />
     <state width="1398" height="262" key="GridCell.Tab.1.bottom" timestamp="1598614103282">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
@@ -316,10 +298,10 @@
       <screen x="0" y="23" width="1440" height="819" />
     </state>
     <state x="466" y="252" key="SimpleOpenTaskDialog/0.23.1440.819@0.23.1440.819" timestamp="1598605740151" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1598619985313">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1598875274900">
       <screen x="0" y="23" width="1440" height="819" />
     </state>
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.819@0.23.1440.819" timestamp="1598619985313" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.819@0.23.1440.819" timestamp="1598875274900" />
     <state x="626" y="326" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1596382953082">
       <screen x="0" y="23" width="1440" height="819" />
     </state>

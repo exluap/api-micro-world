@@ -48,7 +48,7 @@ func GetListOfUser(w http.ResponseWriter, r *http.Request) {
 		message.Respond(w)
 		return
 	}
-
+	resultOfUsers.Result = true
 	result, err := json.Marshal(resultOfUsers)
 
 	if err != nil {
